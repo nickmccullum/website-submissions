@@ -1,5 +1,0 @@
-- [Step #1: Create an IEX Cloud Account](#step--1--create-an-iex-cloud-account)
-- [Step #2: Import Pandas](#step--2--import-pandas)
-- [Step #3: Select Your API Endpoint](#step--3--select-your-api-endpoint)
-- [Step #4: Ping the Endpoint and Store the Data in a pandas DataFrame](#step--4--ping-the-endpoint-and-store-the-data-in-a-pandas-dataframe)
-- [Final Thoughts](#final-thoughts)
