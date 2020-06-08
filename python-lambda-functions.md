@@ -226,6 +226,11 @@ def  add_one(x):
 
 We would get the outcome as,
 
+<<<<<<< HEAD
+=======
+![output](output.PNG)
+
+>>>>>>> e7caeb1fc432d1ec6b667471cf9d5504eeee136f
  These are the set of instructions the Python interpreter uses to perform the task.
 
 Let us look at the bytecode of a lambda function which does the same task.
@@ -235,7 +240,11 @@ dis.dis( lambda  x : x+1)
 ```
 Output:
 
+<<<<<<< HEAD
   
+=======
+![output](output.PNG)
+>>>>>>> e7caeb1fc432d1ec6b667471cf9d5504eeee136f
 
 Bytecodes of both functions are identical. This leads us to the conclusion that in spite of how different syntaxes of the functions, their underlying functionality, and the mechanisms are alike.
 
