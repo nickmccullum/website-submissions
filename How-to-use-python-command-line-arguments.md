@@ -608,13 +608,9 @@ We will enter a name here and press enter.
     What is your name?: Johnny
 
   
-
 It will output,
 
-    Hello  Johnny
-
-  
-  
+![output](/Output%20image.PNG)
   
   
 
