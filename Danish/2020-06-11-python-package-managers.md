@@ -1,5 +1,5 @@
 ---
-title: 'History of Python Package Managers'
+title: 'How to Use the Pip Python Package Manager'
 date: 2020-06-11
 author: Danish Yasin
 layout: post
@@ -8,7 +8,7 @@ permalink: /python-package-managers/
 
 
 
-# History of Python Package Managers
+# How to Use the Pip Python Package Manager
 
 Currently, the most popular package manager in Python is Pip, which was introduced after Python 2.7.9. Before Pip, the predominant tool for package management was disutils or its third-party extension, easy_install.
 
