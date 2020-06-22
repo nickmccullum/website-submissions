@@ -21,6 +21,7 @@ In cPython, some objects that have the same value have the same id. The commonly
 
 The sys.intern() can be used to compare the memory addresses instead of comparing each character.
 
+```
 from sys import intern
 
 a = &#39;sample&#39;
@@ -42,9 +43,11 @@ a is b
 print (id(a))
 
 print (id(b))
+```
 
 Output:
 
+```
 47183403408368
 
 47183402865976
@@ -52,6 +55,7 @@ Output:
 7183403408368
 
 7183403408368
+```
 
 Initially, the memory address of both the variables are pointing to a different location. However, the intern function ensures that they are referring to the same variable.
 
@@ -59,6 +63,8 @@ Initially, the memory address of both the variables are pointing to a different 
 
 Now, let us see an example where we will use both the **is** operator and the **==** operator to understand the difference between both these operators.
 
+
+```
 data1 = []
 
 data2 = []
@@ -98,9 +104,11 @@ if (data1 is data3):
 else:
 
     print("False")
+```
 
 The output of the above code will be as follows:
 
+```
 This is true.
 
 This is false.
@@ -108,6 +116,7 @@ This is false.
 This is true.
 
 This is false.
+```
 
 - In the first _if_ condition, the value of both the lists data1 and data2 are being compared. Both the lists data1 and data2 are empty lists. Therefore, the first _if_ condition gives the output as TRUE.
 - In the second _if_ condition, the memory locations of data1 and data2 are compared. Hence, the output of the _if_ condition is FALSE.
@@ -118,6 +127,7 @@ Now let us look at the **!=** operator and the **is not** operator. **!=** is de
 
 Let&#39;s see this below example.
 
+```
 a = 120+2
 
 b = 122
@@ -130,22 +140,26 @@ else:
 
     print("Eqaual")
 
-if (&quot;computer&quot; != &quot;comp&quot;):
+if ("computer" != "comp"):
 
     print("Both are different")
 
 else:
 
     print("Both are same")
+```
 
 The output of the above code will be as follows:
 
+```
 Equal
 
 Both are different
+```
 
 Let&#39;s now look at the **is not** operator. Like the **is** operator, the **is not** operator compares the memory location of the two objects. It checks the **id()** of the objects being compared and returns FALSE if they are same. If they are different, it returns TRUE.
 
+```
 x=10
 
 y=x
@@ -176,8 +190,10 @@ if (x is not y):
 
 else:
 
-    print("Memory location same")
+    print("Memory location")
+```
 
+```
 94383631757216
 
 94383631757216
@@ -189,7 +205,7 @@ Memory location same
 94383631757536
 
 Memory location not same
-
+```
 The first _if_ statement compares if the memory location of x and y are same or different. From the output, it is clear that both x and y share the same memory location. Then, x and y are assigned two different memory locations. This is confirmed from the output of the second if statement.
 
 # Using the Right Operators
