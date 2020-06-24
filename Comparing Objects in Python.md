@@ -1,6 +1,6 @@
 # Comparing Objects in Python: &quot;==, !=, is, and is not&quot;
 
-In Python, the identity operators ( **is** and **is no** t) and the equality operators ( **==** and **!=** ) have a small difference between them. You would have experienced unexpected behavior while using the **is** or **is not** operators to compare values. In Python, the **is** and **is not** operators are used to check if two objects share the same memory location and the **==** and **!=** operators are used to compare their values. .
+In Python, the identity operators ( **is** and **is not**) and the equality operators ( **==** and **!=** ) have a small difference between them. You would have experienced unexpected behavior while using the **is** or **is not** operators to compare values. In Python, the **is** and **is not** operators are used to check if two objects share the same memory location and the **==** and **!=** operators are used to compare their values. .
 
 In this tutorial, we will discuss the differences between equality operators and identity operators and when to use them. We will also see what leads to an unexpected behavior when we use the **is** or **is not** objects.
 
@@ -24,9 +24,9 @@ The sys.intern() can be used to compare the memory addresses instead of comparin
 ```
 from sys import intern
 
-a = &#39;sample&#39;
+a = "sample"
 
-b = &#39;sample&#39;
+b = "sample"
 
 a is b
 
@@ -178,7 +178,7 @@ else:
 
 x=10
 
-y= 20
+y=20
 
 print (id(x))
 
