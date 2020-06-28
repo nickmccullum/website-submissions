@@ -21,7 +21,7 @@ In cPython, some objects that have the same value have the same id. The commonly
 
 The sys.intern() can be used to compare the memory addresses instead of comparing each character.
 
-```
+```python
 from sys import intern
 
 a = "sample"
@@ -64,7 +64,7 @@ Initially, the memory address of both the variables are pointing to a different 
 Now, let us see an example where we will use both the **is** operator and the **==** operator to understand the difference between both these operators.
 
 
-```
+```python
 data1 = []
 
 data2 = []
@@ -127,7 +127,7 @@ Now let us look at the **!=** operator and the **is not** operator. **!=** is de
 
 Let&#39;s see this below example.
 
-```
+```python
 a = 120+2
 
 b = 122
@@ -159,7 +159,7 @@ Both are different
 
 Let&#39;s now look at the **is not** operator. Like the **is** operator, the **is not** operator compares the memory location of the two objects. It checks the **id()** of the objects being compared and returns FALSE if they are same. If they are different, it returns TRUE.
 
-```
+```python
 x=10
 
 y=x
