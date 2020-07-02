@@ -72,7 +72,7 @@ Module: This is a Python file that you want to import from a script, an interact
 Here, we are trying to execute the file as a Python script. While executing a script, the code the Python interpreter is executing cannot be interactively defined. You can execute the file mode\_of\_execution.py from the command line using the below code.
 ``` shell
 
-$python3 mode\_of\_execution.py
+$python3 mode_of_execution.py
 
 We are testing different modes of execution.
 
