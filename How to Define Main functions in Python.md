@@ -1,4 +1,4 @@
-# How to Define Main Functions in Python
+# New Document# How to Define Main Functions in Python
 
 Python is a very interesting programming language to learn. In programming languages, when an operating system runs a program, a special function called main() is executed automatically. Python also has a main(). In Python, the focal point of the execution of any program is the main() and it acts as the entry point of the code. It is important to define the main function to start executing a program. It is important to define the main function in Python to start the execution of the program. The program does not get executed as a module, it has to be run directly.
 
@@ -93,7 +93,7 @@ Let us now see how we can import the code from a Python file to another file. Py
 When you use the import keyword, Python executes the statements in the defined module. Let us see how we can import the mode\_of\_execution.py file. To do so, you must import this file by starting the interactive Python interpreter.
 
 ```python
-import mode\_of\_execution
+import mode_of_execution
 
 We are testing different modes of execution.
 
