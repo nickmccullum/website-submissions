@@ -17,13 +17,13 @@ Basic main() in Python
 In Python scripts, a conditioning statement sometimes follows a defining function. Let&#39;s look at an example.
 
 ```python
-print(&quot;Hello World&quot;)
+print("Hello World")
 
 def main():
 
-print(&quot;A basic main function&quot;)
+print("A basic main function")
 
-if \_\_name\_\_ == &quot;\_\_main\_\_&quot;:
+if __name__ == "__main__";:
 
 main()
 ```
@@ -49,11 +49,11 @@ Irrespective of how you choose to execute your scripts, Python defines a special
 Let&#39;s look at an example where we will use a file, mode\_of\_execution.py.
 
 ```python
-print(&quot;We are testing different modes of execution.&quot;)
+print("We are testing different modes of execution.")
 
-print(&quot;The variable \_\_name\_\_ shows the context in which the above file runs.&quot;)
+print("The variable __name__ shows the context in which the above file runs.")
 
-print(&quot;The value of \_\_name\_\_ is:&quot;, repr(\_\_name\_\_))
+print("The value of __name__ is:", repr(__name__))
 ```
 In this file, we have three print statements defined. While the first and second print statements are only printing some random statements, the last print statement will use the inbuild Python function repr() to print the value if the variable \_\_name\_ with the introductory phrase present in the print statement.
 
@@ -76,9 +76,9 @@ $python3 mode\_of\_execution.py
 
 We are testing different modes of execution.
 
-The variable \_\_name\_\_ shows the context in which the above file runs.
+The variable __name__ shows the context in which the above file runs.
 
-The value of \_\_name\_\_ is: &#39;\_\_main\_\_&#39;
+The value of __name__ is: '__main__';
 ```
 In the above example, note that the variable \_\_name\_\_ has a value &#39;\_\_main\_\_&#39;. This indicates that the variable is of type string. In Python, strings defined between single quotes and doubles quotes have no difference.
 
@@ -97,9 +97,9 @@ import mode\_of\_execution
 
 We are testing different modes of execution.
 
-The variable \_\_name\_\_ shows the context in which the above file runs.
+The variable __name__ shows the context in which the above file runs.
 
-The value of \_\_name\_\_ is: &#39;\_\_mode\_of\_execution\_\_&#39;
+The value of __name__ is: '__mode_of_execution__'
 ```
 In the above code, note that the interpreter executers three print functions. The first two lines in the output are the same as what it was when the file was executed as a script. However, the third print statement gives a different output.
 
