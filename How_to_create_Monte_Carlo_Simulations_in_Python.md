@@ -137,6 +137,7 @@ This code will generate 100 value pairs and will print how many pairs are inside
     
 
 Now that we know how many points are residing inside the circle, from the equation we developed earlier, we can find a value for Pi as follows.
+
 ![](3.PNG)
 
   
