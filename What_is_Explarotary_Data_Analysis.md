@@ -169,6 +169,7 @@ As we noticed in the first five observations, there could be more null values in
   
 
 Output:
+
 ![](d.PNG)
 
   
@@ -182,6 +183,7 @@ df
   
 
 Output:
+
 ![](e.PNG)
 
 `df.shape`
@@ -217,6 +219,7 @@ Now that we are a bit familiar with the nature of this dataset, we can produce t
   
 
 Output:
+
 ![](g.PNG)
 
 
