@@ -452,7 +452,7 @@ Let’s consider the following.
 Notice that we have used the value straightaway instead of passing a list with the value.
 
 Output:
-![](1.PNG)
+![](output1.PNG)
 
   
 
