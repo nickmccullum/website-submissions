@@ -43,6 +43,3 @@ Apple, Inc. engages in the design, manufacture, and sale of smartphones, persona
 * 1-Year Price Return: 87.0%
 * 2-Year Price Return: 100.5%
 * 5-Year Price Return: 205.3%
-
-## Systematic Investing Research on Apple, Inc. (AAPL)
-
