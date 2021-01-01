@@ -72,7 +72,10 @@ First, we will check for any errors in our module.
 python manage.py check
 ```
  
-**RESULT**
+**RESULT**  
+
+
+
 ![](https://lh5.googleusercontent.com/xIllPPJmY5ftZNCz1CkosSoeRLcUHEVlu3-kWdFW_l2sBhs802L2jlSp0qC_l1sTSlHdJ0976oztAzczXWi-sc8BNYs1i0vX0w0HHSaUsIFXm3ol5vwZSD_gtdvUnqSAqTp7_U2F)
 
 Makemigrations command is used to make a migration file using the defined model. This will generate a migrations file with all the operations to be carried out in the database.
