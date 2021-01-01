@@ -83,7 +83,8 @@ Makemigrations command is used to make a migration file using the defined model.
 ```python
 python manage.py makemigrations book_details
 ```
-**RESULT**
+**RESULT**  
+
 ![](https://lh3.googleusercontent.com/hVPZbtKyEXil3N7AmONYXeDpEbRwnXafDdp1nzlca-fBTNLYhFZkVGPY7_9puX4VF5wWzM5OBY6sVtNZYVAJwMz8SqCmwywh-AdRSWxBveHORMcqVTxc47x2VtgVUM5hj3ukOS7h)
 
 **0001_initial.py migration file**
@@ -120,6 +121,7 @@ Then using the sqlmigrate command, we can identify the SQL commands that will be
 python manage.py sqlmigrate book_details 001_initial
 ```
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/Tf2Gu9T2OL81bd0KN6GoqhTwSSZ3v5-ZqcI-4RzHfbnxWPEkokYLEdzihM1a5C0LBsqEsZODONvkKD0yyjpx7fUxeQqa0jycHO1ORCs8798YvtYqj5My1EuY6L2v9wtvQU6IrXz2)
 
 Finally, we can write the changes to the database using the migrate command. The migrate command is the only function that makes direct changes to the database. Because it is the initial migration of the app, Django will migrate all the necessary administrative models in addition to the user-defined model.
@@ -128,19 +130,23 @@ Finally, we can write the changes to the database using the migrate command. The
 python manage.py migrate
 ```
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/mQ554Hx5aQK6BmoU9LMbC8SkBv5O7F2rKC54RCjqQ3WjXLOejaWWFEENzl45-nbJV0zalpuQc8omPGYy9Gw1mrXMui9x1g7I-LQG-FYfo1z1-LhdfhxcgLHgPXXSsmzq0p_10eTY)
 
 We can use the Django Shell to access the database and check if the table is created. However that can be tedious work. We will use the Visual Studio Code with the SQLite extension to easily access the database.
 
 **SQLite extension**
+
 ![](https://lh6.googleusercontent.com/kMFh1acBC7-XLL-jxboYs3pw7Gai3hs8yUV9cbpDC3NGMlcNYkvLEVGtjpX3FsXPyh5jJJrXVf-WaESGg92_2F60tzVGR6ub_OJQ4eMcB0cHZ36OZ5YPGVmNpgDWiWWGcq7CPT5T)
 
 Install the extension and open the SQLite database of the project using the Command Palette. We can simply browse the database from SQLite explorer and verify if the table was created as defined in the model.
 
 **Visual Studio Code Command Palette.**
+
 ![](https://lh4.googleusercontent.com/qIAp_oBnfS-Xfh4q2YaXVbcIs10Zr7fkjnzdQgtFS5ouiQd9VDL_B7y4S_ezHXjb73Sj-vyjynEPE4uKHGF1IFJSXF8N0ZXFJFeeT_qM5CDBHWLB5-bv7PmnGBPnVZ5ZAqRDmdkK)
 
 **Exploring the SQLite Database**
+
 ![](https://lh3.googleusercontent.com/g-87QdWGk61o1pWmcmuuufSL72aPdtLUHJcOPvdTS0mJHExeBfpEkWKZVNjLkAu_6aNpQtgZdOEwLv-K6zuKGpdpKGeFfenDkX3tJU1SSuR0z_PLI8Yyr-M7o_iprTZMvAuuyRUg)
 
 ### Creating Objects
@@ -158,6 +164,7 @@ record = BookDetails.objects.create(book_id="B0003",name="Story of the Cat",auth
 ```
  
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/t2Wh5mXxHnSsHCi2lFyCR3IfnXf-MjwQQj7faCV3tdnt0VIMqRSy0kxNYZCIpE3uEXaTHaREweTEt1bu4pCK_YA9B0wkDuN4rDrla1GU3_cXrrbB7llwNUYjhfGdxLU3gBuTCMsY)
 
 Let us call all the objects within the BookDetails class using the following commands.
@@ -170,6 +177,7 @@ BookDetails.objects.all().values()
 ```
  
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/OIYwXoczH489s9ozyNrMsINNeQQ0kqEhi-sZ_56Z8U43nIkjZcq9tZm2ObgjjQ5wGkDMFe3cEJzcDUEmL-qsnZ84JRmmv8RHKvY-Ant0XDUdPfHX6pxzrwxblW1uEN4uBKvkWl8h)
 
 It's important to note that we received the string representation of each object defined in the (__str__) method.
@@ -231,6 +239,7 @@ python manage.py check --tag models
 ```
 
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/mewYM5_N5vScTKPrykTcDXNKEQQUM50EITLNj--edKWGdt1dXsiSvT4fz-cj0d_q2-pevxbOn32_r7rWPCK1fT2wYnQ2DEbFn-CgqLY07YmsU6Hur8X6O3EBgZd-_s3wF8H_rIZu)
 
 The Django framework did not identify any issues. So we will continue to make the migration file. The migrations file clearly states the modifications that will be done to the database.
@@ -240,6 +249,7 @@ python manage.py makemigrations
 ```
 
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/ht2cEexMJW8f_AnXGfZj9jTNjUCb78N0b9cRmOo508SEHPHO3aha2oKrLkmToM6Yux85KI9mWc2ouba4dneApw6_kSUlOGhUSQ0pu4WiNPanQ5qSMG9bIQDbggBuPDnKY4MdmcIm)
 
 **.\book_details\migrations\0002_auto_20201225_1447.py**
@@ -288,16 +298,19 @@ python manage.py sqlmigrate book_details 0002
 ```
  
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/W8sYH1ICXczNHkhAXUlk4kcybvMSp-JsPYLPm3044G9-jTMSAcd4nQgw_E9wiIWWbHTXDRpCZYY4M3WD4iSAAH7d7pf3OvEe9HG_-7q4FyvWJmpjaYGOVnDnqWVKLguMyS0iMxSr)
 
 Django framework eliminates the need to write these SQL queries as it will automatically be generated according to the defined module. Note that the “bookdetails” table is already populated and if we try to make the migrations that affect the fundamental structure of a table, the changes will not propagate.
 
 The current data structure in the table
+
 ![](https://lh5.googleusercontent.com/5ih1k1Pl5HqX0Yo0FYNGIyby8D7cDgNgMGjr_wfdNlu1s7s4Q4oFZOQe7d3bv2-GWcG3HYzsFjmUqEo2hgmWi8_mvHeRKOpG_LGiVAnNLVYOJzyl-RYhUFZl4fgNyJGEGnKAhM1l)
 
 Because we are creating a relationship using the author field to the new “AuthorDetails” class, the migration command will raise an IntegrityError because there is no corresponding record in the “AuthorDetails” table.
 
 **IntegrityError**
+
 ![](https://lh6.googleusercontent.com/5LkY6_tl7lUjpCEEJuhjtZqHBjcyo8nyDf0kJWrkDCGbauG1qFVPBJTZwFG4lq0OFbU1xcg8MwNojqNQ5ay0KV98I66LL4e_9cAE0iXF12spyStg_nv0EKZeDFAw9Q6OiHHv-2bs)
 
 We can mitigate this issue by simply deleting the records within the “BookDetails” table using the Django shell and recreate new objects according to the new table structure. This is only done because we are in a test environment and handling a small dataset. Using the Django shell, the records in the “BookDetails” table are deleted.
@@ -312,6 +325,7 @@ BookDetails.objects.all().values()
 ```
   
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/xPQ5eqlI3ykPeSdAeA0O12P5q15Qzgre-1UNfSDT3yhMSFrhIwmtY287O-14NSVyBfT0hl262QeZofAFDWi2wi2dQBmkb0E320TU7n9ARD6odYTQSVpyR4yGjw3YHwkpYWxcYul-)
 
 After deleting the records, we can safely make the migrations to alter the database structure.
@@ -320,11 +334,13 @@ python manage.py migrate
 ```
   
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/2LEQrjmE2EUL0peTMKhJfEwDC6taJ8EGdc7NDvl_Avm8m-Mo9btzdo-MjYWHB_MzLjlnTu9f0ikPi64VuwJnyQHBV4o1t-QutBjmY8h1r5X-uxzz6nH5hzyaEJkYJgVi2jhH5_ZP)
 
 Let us check the modified table structure using the SQLite Explorer in vscode.
 
 **SQLLite Explorer**
+
 ![](https://lh3.googleusercontent.com/XXFJ7bFyjj-Qnf7miQWQKwpPlgtYC8F3iThg12G0B-kECir-TFjtYzu6xsXgmu12C6-p2u01RzPaEEjOw63OpFDMgRo6PWfCYwB5LqbqmyOF0vGD7WFHphJfBuV9y9pPEykGdjkk)
 
 ## Creating new Objects
@@ -343,9 +359,11 @@ AuthorDetails(first_name='Jenifer', last_name='Wu', email='jen.wu@outlook.com', 
 ```
   
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/jsG2B9UuUxQDpBuOvgJkScaGUEnlKXQD6yTq-oqfw-Oal8DSEzUa2NjKMX9wm1I1ngN4xN20ExFhDituklwC-zIPI8ZZpLnpRl3xqjclCKjTJjin_L1-foA5O1NldGOObpgwys-7)
 
 **Table Structure (VsCode - SQLite)**
+
 ![](https://lh3.googleusercontent.com/-PR0tShB4CagXhRT5BR1GN1XT8xP7n9aiAIMBhdPM4z3PMncpHHHPZWh4Uyiyk6Kp9HNbubZ1CZsZvdY9Cl-3Wt181le368FcFSr82zpLpP56hqJvBuytamtZsj7CwylY0AYxEy6)
 Now we can create new objects for the “bookdetails” table associating the objects of the “authordetails” table. This can be done by importing both modules, and creating a specific object for the desired authordetails table record and passing that object as a parameter to the author field in “bookdetails”.
 
@@ -360,11 +378,13 @@ BookDetails.objects.all().values()
 ```
   
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/q_ArA2u789s6QYvVhUVRWWkYIcCALkV3JNXpAkxT84-0neVDMTPKf3hzpNh4TiVbCgX2UhVlwO3r02C2vbzR39GEvCoFltlDE32tsmYTxWGnG4IzltY5UvjZZZqJbor1QKzS16zL)
 
 Notice the difference in the author field in the output. We have defined the author field when creating the object. However, as this is a Foreign Key field, Django will automatically convert the specified author_record object to the corresponding record in the “authordetails” tables.
 
 The following diagram illustrates the relationship between the objects.
+
 ![](https://lh6.googleusercontent.com/tdRSecUL9P0BroFJpb4USJBr5-kxg6M8Ha5ylN_qazL-8ZvxBc_UbggsUKTCEfyAK0DZcTQlZ_-ZjtmB2y-MKRRTicBGdhCTmEQUf1wjDdl8-QHX-KQ53uIHagGnuXljINDBXanD)
 
 Next, let us create additional objects (records) for the BookDetails class.
@@ -382,6 +402,7 @@ record = BookDetails.objects.create(book_id="B0003",name="Alien Origins",author=
 ```
   
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/SyiyhIzwwsJhLxvQy9UFEd4kZx8rF4jUqcF9o-P0v2K1Vd_lxTMwqNoEJA48hlOMDm-TpxBiS25yfIqpKez8YgxaNvLmGFJQ1BO-IKyOFLWU2LlEGRsHKDuVt-5AlHR5kWsuchpe)
 
 Until now, we have only associated a single “bookdetails” record with a corresponding record in the “authordetails” record. This is called a one-to-one relationship between records. However, we can associate multiple records in the bookdetails table with a single author record using the Foreign Key. From a single “authordetails” record (author object), we can associate that author with multiple books. The database term for this is a one-to-many relationship.
@@ -395,6 +416,7 @@ record = BookDetails.objects.create(book_id="B0004",name="Captains Guide",author
 ```
   
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/RajpNykhswxWxUhKhq0LiL8RuuBIJzTHeOEUVllswaas2XUqwEwBpmuEq9mOBgmP3wgfqLlgBraRrCN58IuPNsatK1qlZt0Ed05sJ3vk7KgNaHxQHiFC_dj_8hTJBZlRepisdJOj)
 
 Let us verify the objects within the BookDetails class using the Django Shell and the SQLite plugin in Visual Studio Code.
@@ -408,9 +430,11 @@ BookDetails.objects.all().values()
 ```
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/4MXNGPtKmFmhi_5Rhe5Cjm6ZqdTPhLf3hJLqhY4bRr2YepLCrmUpfDLG5KvKLKC50mi4AzbzMj_2hCXduI3rXOKVyPB7ciCGb0krAN_qYu9UpLsKxyADKDd2JVdlsWzCc2guHWLF)
 
 **Table Structure (VsCode - SQLite)**
+
 ![](https://lh5.googleusercontent.com/COrnNEGIQ8QLqYmUuVO8aoWtNKvIa62QOsA0dwiSSdUZBvLfV-y1_THo12I8BTODs1CpituLmMaI1Yyp9HWM_F2p43pnnGjYhAWm476mLK0mlTbRzdsTm8TLD7GsR0pJtUetbzG7)
 
 # Conclusion
