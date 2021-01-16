@@ -23,6 +23,7 @@ else:
 ```
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/KWVKBs-3K2twkY0v-me6Qfm1Ri1beA_uDu0UnacadGgf-aw48c0B2A1WOsEcMKAhy4My6WCQnOwtmmZhVkRTvAUm_toA_pJDu-t7cCSk5DIAG_tig5fgAuzmuQHKhJEuW3py7PTv)
 
 In the above example, the search function in the re module is invoked and a regular expression is defined to check if the provided string ends with the word ‘String’. It will print the matching word and the search object which contains the information of the search and result if the condition becomes true.
@@ -179,6 +180,7 @@ print(re.search(r'Beautiful$', multiline_string, re.MULTILINE))
   
 
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/3Qj91VPthK1ZqDhRgpPbavxvR66Mo0bpkuPc9-aRhoaHnqh0X4oC_ACORpAsAGAWKNHgMi-kzvBSwwXtN3PCHImJ8wRPZWlj7NHdd0Rlo2U5MbYSdpvRkD-KjC3rereIuiiEvHeu)
 
 According to the above example, you can only match the defined regex patterns (a string starting with the word “World” [^] and a string ending with the word “Beautiful” [$]) when the MULTILINE flag is declared. The MULTILINE flag will only affect the “re.search()” function and not the “re.match()” function.
@@ -196,6 +198,7 @@ print(re.match(r'^World', multiline_string, re.MULTILINE))
   
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/FThQke5tB6Qv0CMmbCmDVXm1qnWvQa61XAecbhy5IF8TmB0aBoX9WJkBUjr4VaQ4E39agmLKe0oLBV4isZhgaL85_C-f3ExW8Cq3Yc1alDhMOyrQ4qEfBge1_EA1H13EI96WMlXw)
 
 The re.match() function will always be bound to the beginning of a string regardless of the multiline structure of the whole string. When you are searching for the word “World” (^World) in the above example, the second line starts with the given regex pattern but the result will be 'None' as the re.match() function only looks for the matching pattern at the beginning of the complete string.
@@ -235,6 +238,7 @@ for x in item_list:
   
 
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/9ldFG34FT28mT6rwaK4N18mO0kCLxgI9rHvcLijzEuQLmoYmovZFqufX95XH5EZ1h3REfzZoa5RUWKCIQvrYa9V6JeIRsZESu8xrvN6Co-ikDdR2NdGIbtFK6UmqDPd2l9akPqrX)
 
 #### re.finditer()
@@ -260,6 +264,7 @@ for x in iterable_object:
 ```
   
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/l9d-5qtYFhCqjfWYgBjnnMUhCC2F92YD270sho8SLSnkZ92cF73oFR5g66Hua4_zoEq2mMs6yGNmdLrA0GZwZtmf3j9seK46QZhK2AI0n3vtB1QImj57h7w00z-rZqVDlc3HZfqc)
 
   
@@ -320,6 +325,7 @@ print(result.group(3))
   
 
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/HbbbXJlronlwHgyToPxYC3KH0kdzi6pje_jt3gU6xlQVdqI2kXPzUNeX8VA-5Z174w004lBCk3LjLDX_xQbZy4sxluRxSLxlKcHnf3kXaZtqTrPAMIdzH25QVBTNPLkUr-HRpCI9)
 
 ##### Named group
@@ -345,6 +351,7 @@ print(result.group('part2'))
   
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/68Lz1ZXpZ2wro6cIKl9Ax_6038f9m6OYwHzmUlliafvZDilN6xV_jXmxZhrtRDRAhu83egZT8IWzViIOgV74gTLphr9P28g3-KwzZz9bGdYLUHQ0BDBYxbmcx36o5ayBjsaNb8ph)
 
   
@@ -372,6 +379,7 @@ print(result.group(1, 2))
 ```
 
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/0-0ZVgY7PivWP-GTKpcTHbBBEFfUrTf-BRX76s5lF39CQ24Ez5PiXoH7ohJzkOG67GLw36iK7kn9DxZb5REj04xzUyupErLMbbTVBFCDv5da1DBbjypxdVGHAop8SNWeLuejTde1)
 
 #### match.groups() Method
@@ -391,6 +399,7 @@ print(result.groups())
   
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/RwWjwiYZzTHgDybgp--ANZtznbTnGj0CzuHY8S97dtClGnhR9hCrMJnQw2b7-GaGeLY_WIb__t-XtBRMqE9vj-aBHil_vgxeFwyx1bEqnHcgk3yHurdbV-hGjXoBkJqOVE-yoAtu)
 
 #### match.groupdict() Methods
@@ -469,6 +478,7 @@ print(result.span())
   
   
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/3mRIuQijl5cvXEliNlT1qfQ2IZejr9MlmzY8M8MKpAW1bwC1EGw2d8fPaShOx5U8o_tSa7UREqzlVEaRdLiFYniC7z3JK_FflOdnRM0iJK29Muzskht4uhzK8Y8cZycyxJUFkFgg)
 
 ### String Modification Functions
@@ -513,6 +523,7 @@ print(new_string)
 ```
   
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/dDYwQqeVzmefa9WxrwQlb3VzhD1lK8REcE62VMKotF8W8a60LCXmWr3boN3ilkC3REA04xPu8tzNRIa2mSi8EdX9wlpphXss2-vkhtmKLBLR-KI2ALM9LbJocIUoLi9Pi7rcwbbm)
 
   
@@ -540,6 +551,7 @@ print(new_string)
 ```
   
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/NGb0bGFVz4iTV2TPxRunkRYBny-gdXzn3pWJwhj_iA08ozZQsHLotUEVvYv9tKiX5Tj7GKY2N8jFiZkYrjVN-4fh9GYOA5H2PQbTzTpZKyxNE3oMctlvf6oTymmQsxrbOdcav6ct)
 
 #### re.subn() Function
@@ -557,6 +569,7 @@ print(new_string)
 ```
   
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/kY4jXkR59Ocmd6eivx85iFpb4FyRHbz_OOJ9aIF5ymB4Ck2YENsdG2T1faKImAJBbjslXtFbUDvxbr9SAhL9HNYujEZkYRVPutdZEaonhqztCSu0SO-QKfPhRD8eU49uHH0F53bc)
 
 #### re.split() Function
@@ -587,6 +600,7 @@ print(re.split(r'\W+', text, maxsplit=2))
   
 
 **RESULT**
+
 ![](https://lh3.googleusercontent.com/oMpylIUDkhLHGRco6UW27qlrcMO3qOYIu5QHNJUqWvF8Dw5QsonAtdY8SWfw49dMuK65997qku7qoiQZofBQM8gG-tqdTnwenhlmZVANSQ0SfNKqvKmV2uymtbYC9fi95fVFNX0_)
 
   
