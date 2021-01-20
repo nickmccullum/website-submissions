@@ -21,10 +21,12 @@ python manage.py createsuperuser
 ```
 
 **Creating the project and the app**
+
 ![](https://lh3.googleusercontent.com/-Tq_Dbsxr-XiTZDtMlijMzNpRrDYLS4Ry6WvwPiod6l2K84sOeiqKsRYD5u_7QIF1pqwT-2Bw0OTXmCXySnmt0w0nziW27HP6w_Uq0uh2zqQ58e-xuo4K7xAUt5ioMp544nZwmnc)
 
 
 **Creating the user**
+
 It is important to note that access to the Django admin interface is limited to users with superuser or staff attributes.
 
 
@@ -127,6 +129,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 **Make Migrations**
+
 ![](https://lh3.googleusercontent.com/XKTRQ294-cI-Z-W_ZKHqEcYU7Q_2WoO6dSdngwXzk2n0qc1NK9_w0henyueRGsBCRBCl7revpMR5XVFM-leDObTN6Te8Mp-DS_I-nKKBULqEOnkQ1hZqOKNCkDnvtqFTG2Yo7GdP)
  
 
@@ -136,11 +139,13 @@ python manage.py runserver
 ```
 
 **Start the Server**
+
 ![](https://lh4.googleusercontent.com/Y3q31e68T7Hp6n5J2kK1H-AnC_xNC6lnCeSSPKIGeNBQ68Q1aAzX2DzD9z_PhjN-z_B0xTWSC1er-PAfY2VuQdadgs8mgNXsmcN_duQp3_4SRZjNaLBf-0Zq_O7tWGcTuC6v1B3M)
 
   
 
 **Django Admin Interface**
+
 ![](https://lh3.googleusercontent.com/h9zf--cw3C19uK9f17aUNggtV9fSlsEUu-cEBcRVeCdvK7y-GF47WWtJfL4fCxl3xsMwaBr3SJulTbTRS5d6c_vlIXBgbYV-19axVh3ZuCWMRKe6m-_96jcPyNxXHPPJUWdOfQ5D)
  
 
@@ -152,15 +157,19 @@ Now you have configured a basic Django Admin interface with all the user models 
   
 
 **VehicleTypes**
+
 The (\__str__(self)) method will be used to display the name of each object.
+
 ![](https://lh4.googleusercontent.com/o4EiARTrYmp-z3rktNevUAOi6kfp0Hk7QuxsXg3aszf4RTu7tn0gTyyFSP0nPAyf7umR8dZ5YReJ85g_zSJV6WCAEsXZW7_1KWm1oztqQaFkH-yHxOK_g5tauTjoNreIl2cpEdNk)
  
 
 **VehicleSales**
+
 ![](https://lh6.googleusercontent.com/kBY0WZH_GV1ry9u_Od7o_o-vFFoEZpOqe8p7XvYVgyyHHrwAv4aLfmP5ULy_EwlRAXxOLzcLT1tvVNqPty7TS4MqDswAmNTnFNwN7Kv9n2CMIwbX37fAtAufspzkcJ8RdvghAkWU)
  
 
 **Owners**
+
 ![](https://lh3.googleusercontent.com/YCs6JLIJPlX8_A6VL1steU0GkCFyKQlpIZ0AvWIa-O78FBLVnQjLBFqRyHlvUY1a5xPL1rqDNpW2AJremh97coBdsyv27xavnHIevqgziuP_9mQwV315MVWzGJRcaWK_COD5zraJ)
 
 Now, you have a complete set of data that can be used to learn about how to customize the Django Admin interface in the next section.
@@ -243,6 +252,7 @@ class OwnerAdmin(admin.ModelAdmin):
   
 
 **RESULT**
+
 ![](https://lh5.googleusercontent.com/2umQUXVnecpHer3zSM6rQB1M8ZKEen0VHR_2KHjeIdj5E464mSshaIbzbj_aF6OztTvc2n7igltadQ4RQgbLxCzoT1k8-SB_z7fqz6_dw1SVoD-r9O0H0Q5A4zo6lVRLvmDiZZm7)
 
 
@@ -264,6 +274,7 @@ class VehicleSales(admin.ModelAdmin):
 ```
 
 **RESULT**
+
 ![](https://lh4.googleusercontent.com/XFSllTzQCGHDZ5nhsLdKlKwGM_bYF7LUyjnR85S5StdG7SWgfQylftmYn47YO-QKr8ilLFxhXWQAazbziDGiVnbauZ9eunKW77B1Oub4_llMgRUsbp6c349_a6gq6va2U8CfSw5m)
 
 
@@ -313,9 +324,11 @@ In addition to the above changes, you can expose all the fields in the Vehicle T
 
 
 **Linked Vehicle Sales**
+
 ![](https://lh5.googleusercontent.com/qmgDRG9woNGx04bY4HXQut-vzAgwQUdXAFAyJDHtqsZlgmGGxcTegoWrS9di9YaXcYuLyrO4h4h8gCbellHQ7ii8VwxjnuwimRECcxwQXxbM1FES4TBI4RFyvF4rGye6tiP0BNS8)
 
 **Linked Object**
+
 ![](https://lh4.googleusercontent.com/X2G5ydqKMFfJniH_7O9swCJubsi1hoZ7CwGRIHeLUA-llJKm42ff9Q3Qbf9IxETi-t6RtlfVeGgDXpOSozekEOXkKeMDgM-rksdvRYzqfYp_mfaq9TepXP0IhNKbihH2GpyAbV4Z)
 
 
@@ -331,6 +344,7 @@ class VehicleType(admin.ModelAdmin):
 ```
 
 **RESULT**
+
 ![](https://lh6.googleusercontent.com/3WxiA94KzkTptXBMjK77YeS8uaZU-4IcxffpOjB3Y1J3XYOtmSsQI-wSnnAvg_j4jtVZCsDnPqYZvVxIKoF64Ui40FmokMJRwkhSEx0OV8G78-hb1ultikWWJWO0QJDGxnzmomVx)
 
 
@@ -381,9 +395,11 @@ class VehicleType(admin.ModelAdmin):
 ```
 
 **Before Modifications**
+
 ![](https://lh5.googleusercontent.com/Eq-ZO9dN7S2q_JA50oW3hSsK73KzdZzyiG-oeOp3m0i7MtLY8gxmvXiMmJEliVcBHHtSBKsjxgAJut2dJrh_YQvMw3lKbicBju-NdOcPI1Yw7ZdnXsZ5WoU4UndzOvtCNaR8X89X)
 
 **After Modifications**
+
 ![](https://lh5.googleusercontent.com/-fz2E7Zop3j3cmJDZqT_hehdq1X3Rom6pagoabMoTDKb6OENfFd8qiW0Jo8DP1uOSF5M7XwHUT3O8nXJzaCtvrlnqJERalgRm0lfM6tcInhJZbiPj3Ji3Hk93OKPdtDN-1sV850t)
  
 
@@ -418,6 +434,7 @@ class VehicleType(admin.ModelAdmin):
 ```
 
 **Modified Interface**
+
 ![](https://lh3.googleusercontent.com/NE0_L4yIhSHr7Tf81FoEVg3Qxi2o7W3F3aoh9Rx9Gx0qcXS2EnX3tUSNKwASNoZjztDvwv5AioN_jeDi1IWp3ySJkeaTcmuc9_gCUI24SkLvuRn_-bsoMmYE0Weep0irpETp8Q7d)
 
 
